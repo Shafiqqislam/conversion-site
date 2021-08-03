@@ -13,11 +13,12 @@
 
    <p>Conversion Rate</p>
    <form class="" action="conversion.php" method="post">
-   <select class="" name="Distance" required>
+   <select id="ddlView" class="" name="Distance" required>
+          <option value="">Select</option>
           <option value="Foot to Inch">Foot to Inch</option>
           <option value="Inch to Foot">Inch to Foot</option>
             </select>
-            <input id="amount" type="text" name="amount" value="" placeholder="Enter a Value" required><br>
+          <input id="amount" type="text" name="amount" value="" placeholder="Enter a Value" required><br>
             <br>
             <br>
            
@@ -44,8 +45,9 @@ if (isset($_POST['convert'])) {
 
 ?>
 </h3>
-<input id="convert" type="submit" name="convert" value="Convert">
+<input id="convert" type="submit" name="convert" onclick="Validate()" value="select">
 
 </form>
+<script src="./script.js"></script>
 </body>
 </html>

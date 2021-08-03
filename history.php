@@ -12,6 +12,13 @@
    1. <a href="home.php">Home</a> 2. <a href="conversion.php">Conversion Rate</a> 3. <a href="history.php">History</a>
 
    <p>Conversion History</p>
+   <form>
+<input type="text" size="30" onkeyup="showResult(this.value)">
+<div id="livesearch"></div>
+</form>
+<br>
+<br>
    <textarea name="" id="" cols="30" rows="10"></textarea>
+   <script src="./script.js"></script>
 </body>
 </html>
